@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Menulis';
+    src: url(../fonts/menulis.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial-Rounded';
+    src: url(../fonts/Arial\ Rounded\ MT\ Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aventa';
+    src: url(../fonts/Aventa-LightPERSONALUSEONLY.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #e3dacd;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+    background-color: #e3dacd/* #fefbf5 */;
+    height: 100px;
+    width: 100%;
+    font-family: 'Aventa';
+    display: table;
+}
+
+header nav ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2%;
+    padding-bottom: 1%;
+    padding-right: 3%;
+    margin-bottom: 1%;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.4);
+}
+
+header nav ul li{
+    margin: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.4s ease-in-out;
+}
+
+header nav ul li:hover{
+    color: #986945;
+    transform: scale(1.1);
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+header nav ul li a:hover{
+    color: #986945;
+}
+
+
+
+#logo{
+    margin-right: auto;
+    margin-top: auto;
+}
+
+#logonav{
+    margin: 0;
+    padding: 0;
+    width: 40px;
+}
+
+#header-menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+#header-menu h1{
+    font-family: 'Aventa';
+    font-size: 50px;
+    color: #986945;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+#header-menu p{
+    font-family: 'Aventa';
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a0b670;
+    flex-direction: column;
+}
+
+#menu h2{
+    font-family: 'Menulis';
+    font-size: 38px;
+    color: #e3dacd;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    letter-spacing: 3px;
+}
+
+#cafes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #a0b670;
+    gap: 5%;
+    padding: 2%;
+}
+
+#bebidas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #a0b670;
+    gap: 5%;
+    padding: 2%;
+
+}
+
+#cafes img{
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-item{
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.5s ease-in-out;
+    border-radius: 8px;
+}
+
+.menu-item:hover .overlay{
+    opacity: 1;
+}
+
+.description{
+    font-family: 'Menulis';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    width: 80%;
+}
+
+#cafes h3{
+    font-family: 'Menulis';
+    font-size: 24px;
+    color: #e3dacd;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+#bebidas h3{
+    font-family: 'Menulis';
+    font-size: 24px;
+    color: #e3dacd;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+#bebidas img{
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+#postres h3{
+    font-family: 'Menulis';
+    font-size: 24px;
+    color: #e3dacd;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+
+}
+
+#postres{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #a0b670;
+    gap: 5%;
+    padding: 2%;
+
+}
+
+#postres img{
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+footer{
+    background-color: #a0b670;
+    width: 100%;
+    font-family: 'Aventa';
+    display: table;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #e3dacd;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 -2px 2px -2px rgba(0,0,0,.4);
+    letter-spacing: 1px;
+}
